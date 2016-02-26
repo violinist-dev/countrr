@@ -1,0 +1,46 @@
+uuid: b79607e4-60fb-46f7-8003-3d0368568703
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.log.count_batch.field_aa
+    - log.type.count_batch
+  module:
+    - barcode_count_field
+    - user
+id: log.count_batch.default
+targetEntityType: log
+bundle: count_batch
+mode: default
+content:
+  done:
+    label: above
+    type: boolean
+    weight: 10
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  field_aa:
+    weight: 100
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: barcode_field_count_formatter
+  timestamp:
+    label: above
+    type: timestamp
+    weight: 10
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 99
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

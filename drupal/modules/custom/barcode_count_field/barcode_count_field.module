@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains barcode_count_field.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function barcode_count_field_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the barcode_count_field module.
+    case 'help.page.barcode_count_field':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Barcode count field') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function barcode_count_field_theme() {
+  $theme = [];
+
+  return $theme;
+}

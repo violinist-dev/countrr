@@ -1,0 +1,11 @@
+uuid: e5a9e135-3d62-4b74-9002-2dd106361b56
+langcode: en
+status: true
+dependencies: {  }
+id: count_batch
+label: 'Count batch'
+description: ''
+name_pattern: '[current-date:raw]-[current-user:ip-address]-[current-user:uid]'
+name_edit: false
+done: false
+new_revision: true

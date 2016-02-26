@@ -1,0 +1,21 @@
+uuid: 75081be4-3a27-467f-8703-3f7f15b92624
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.log.field_aa
+    - log.type.count_batch
+  module:
+    - barcode_count_field
+id: log.count_batch.field_aa
+field_name: field_aa
+entity_type: log
+bundle: count_batch
+label: aa
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: barcode_count_field_type

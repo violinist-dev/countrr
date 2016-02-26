@@ -1,0 +1,20 @@
+uuid: 8a5e617f-c250-48ce-843f-63503fa56993
+langcode: en
+status: true
+dependencies:
+  module:
+    - barcode_count_field
+    - log
+id: log.field_aa
+field_name: field_aa
+entity_type: log
+type: barcode_count_field_type
+settings:
+  max_length: '255'
+module: barcode_count_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
