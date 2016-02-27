@@ -1,17 +1,17 @@
-uuid: 75081be4-3a27-467f-8703-3f7f15b92624
+uuid: 8759dd1b-53ea-4abe-9d00-f0136c32fa53
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.log.field_aa
+    - field.storage.log.field_count_rows
     - log.type.count_batch
   module:
     - barcode_count_field
-id: log.count_batch.field_aa
-field_name: field_aa
+id: log.count_batch.field_count_rows
+field_name: field_count_rows
 entity_type: log
 bundle: count_batch
-label: aa
+label: 'Count rows'
 description: ''
 required: false
 translatable: false

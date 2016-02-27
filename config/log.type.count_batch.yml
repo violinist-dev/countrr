@@ -1,10 +1,10 @@
-uuid: e5a9e135-3d62-4b74-9002-2dd106361b56
+uuid: 40c0e04c-85aa-4541-9800-f1f09f6cc49c
 langcode: en
 status: true
 dependencies: {  }
 id: count_batch
 label: 'Count batch'
-description: ''
+description: 'Used for storing count batches'
 name_pattern: '[current-date:raw]-[current-user:ip-address]-[current-user:uid]'
 name_edit: false
 done: false

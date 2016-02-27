@@ -1,9 +1,9 @@
-uuid: 6931c150-64b2-4b42-8600-fff5e9d98a13
+uuid: 9c1701ce-79ef-474f-8240-64ab5a52c83a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.log.count_batch.field_aa
+    - field.field.log.count_batch.field_count_rows
     - log.type.count_batch
   module:
     - barcode_count_field
@@ -23,7 +23,7 @@ content:
     weight: 90
     third_party_settings: {  }
     type: boolean_checkbox
-  field_aa:
+  field_count_rows:
     weight: 100
     settings:
       size: 60
