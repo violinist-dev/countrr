@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains rest_is_logged_in.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function rest_is_logged_in_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the rest_is_logged_in module.
+    case 'help.page.rest_is_logged_in':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Rest is logged in resource') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function rest_is_logged_in_theme() {
+  $theme = [];
+
+  return $theme;
+}

@@ -28,10 +28,12 @@ module:
   page_cache: 0
   path: 0
   rest: 0
+  rest_is_logged_in: 0
   restui: 0
   serialization: 0
   system: 0
   text: 0
+  token: 0
   toolbar: 0
   update: 0
   user: 0
