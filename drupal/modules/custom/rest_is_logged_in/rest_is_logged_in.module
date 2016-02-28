@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Access\AccessResult;
 
 /**
  * Implements hook_help().
@@ -30,4 +31,37 @@ function rest_is_logged_in_theme() {
   $theme = [];
 
   return $theme;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_create_access().
+ *
+ * We want to allow creation of user entities for anonymous users.
+ */
+function rest_is_logged_in_user_create_access(\Drupal\Core\Session\AccountInterface $account, array $context, $entity_bundle) {
+  return AccessResult::allowed();
+}
+
+/**
+ * Implements hook_entity_field_access().
+ *
+ * @todo: Both this one and the next should probably be in another module. But
+ * since I had this file open... YOLO.
+ */
+function rest_is_logged_in_entity_field_access($operation, \Drupal\Core\Field\FieldDefinitionInterface $field_definition, \Drupal\Core\Session\AccountInterface $account, \Drupal\Core\Field\FieldItemListInterface $items = NULL) {
+  if ($items && $items->getName() == 'status') {
+    return AccessResult::allowed();
+  }
+  return AccessResult::neutral();
+}
+
+/**
+ * Implements hook_entity_field_access_alter().
+ */
+function rest_is_logged_in_entity_field_access_alter(array &$grants, array $context) {
+  /* @var \Drupal\Core\Field\FieldItemListInterface $items */
+  $items = $context['items'];
+  if ($items && $items->getName() == 'status') {
+    unset($grants[':default']);
+  }
 }
