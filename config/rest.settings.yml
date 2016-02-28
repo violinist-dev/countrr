@@ -11,3 +11,9 @@ resources:
         - hal_json
       supported_auth:
         - basic_auth
+  'entity:user':
+    POST:
+      supported_formats:
+        - hal_json
+      supported_auth:
+        - cookie
