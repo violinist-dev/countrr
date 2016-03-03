@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - log.type.count_batch
+    - user.role.authenticated
   module:
     - log
     - rest
+    - user
 id: user_batch_history
 label: 'User batch history'
 module: views
@@ -23,8 +25,10 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -350,7 +354,22 @@ display:
           entity_type: log
           entity_field: type
           plugin_id: bundle
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: log
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: log
+          entity_field: created
+          plugin_id: date
       header: {  }
       footer: {  }
       empty: {  }
@@ -402,6 +421,7 @@ display:
         - url
         - url.query_args
         - user
+        - user.roles
       tags: {  }
   rest_export_1:
     display_plugin: rest_export
@@ -441,4 +461,5 @@ display:
         - request_format
         - url
         - user
+        - user.roles
       tags: {  }

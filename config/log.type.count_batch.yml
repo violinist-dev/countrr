@@ -6,6 +6,6 @@ id: count_batch
 label: 'Count batch'
 description: 'Used for storing count batches'
 name_pattern: '[current-date:raw]-[current-user:ip-address]-[current-user:uid]'
-name_edit: false
+name_edit: true
 done: false
 new_revision: true
