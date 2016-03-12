@@ -1,0 +1,17 @@
+
+# In order to to create pages it is necessary to define routes for them.
+# A route maps a URL path to a controller. It defines with what function
+# or method will be called when a URL is accessed.
+# If the user accesses http://drupal8.dev/user/{user}/history, the routing
+# system will look for a route with that path. In this case it will find a
+# match, and execute the _controller callback. In this case the callback is
+# defined as a classname
+# ("\Drupal\barcode_count_field\Controller\DefaultController")
+# and a method ("redirect").
+barcode_count_field.default_controller_history:
+  path: 'user/{user}/history'
+  defaults:
+    _controller: '\Drupal\barcode_count_field\Controller\DefaultController::history'
+    _title: 'history'
+  requirements:
+    _permission: 'access content'
