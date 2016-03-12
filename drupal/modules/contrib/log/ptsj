@@ -1,0 +1,73 @@
+commit 10a68a957d3d97d6dfc5333ccd694bc48b154208
+Author: Eirik S. Morland <eirik@morland.no>
+Date:   Sun Mar 6 09:44:28 2016 +0100
+
+    Add mark as done action.
+
+diff --git a/config/install/system.action.log_done_action.yml b/config/install/system.action.log_done_action.yml
+new file mode 100644
+index 0000000..a613e0d
+--- /dev/null
++++ b/config/install/system.action.log_done_action.yml
+@@ -0,0 +1,10 @@
++langcode: en
++status: true
++dependencies:
++  module:
++    - log
++id: log_done_action
++label: 'Mark as done'
++type: log
++plugin: log_done_action
++configuration: {  }
+diff --git a/src/Plugin/Action/MarkAsDone.php b/src/Plugin/Action/MarkAsDone.php
+new file mode 100644
+index 0000000..cee82db
+--- /dev/null
++++ b/src/Plugin/Action/MarkAsDone.php
+@@ -0,0 +1,45 @@
++<?php
++
++/**
++ * @file
++ * Contains \Drupal\log\Plugin\Action\MarkAsDone.
++ */
++
++namespace Drupal\log\Plugin\Action;
++
++use Drupal\Core\Action\ActionBase;
++use Drupal\Core\Field\FieldItemListInterface;
++use Drupal\Core\Session\AccountInterface;
++
++/**
++ * Marks a log as done.
++ *
++ * @Action(
++ *   id = "log_done_action",
++ *   label = @Translation("Mark as done"),
++ *   type = "log"
++ * )
++ */
++class MarkAsDone extends ActionBase {
++
++  /**
++   * {@inheritdoc}
++   */
++  public function execute($entity = NULL) {
++    /** @var FieldItemListInterface $a */
++    $entity->get('done')->setValue(TRUE);
++    $entity->save();
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function access($object, AccountInterface $account = NULL, $return_as_object = FALSE) {
++    /** @var \Drupal\log\LogInterface $object */
++    $result = $object->access('update', $account, TRUE)
++      ->andIf($object->get('done')->access('edit', $account, TRUE));
++
++    return $return_as_object ? $result : $result->isAllowed();
++  }
++
++}
