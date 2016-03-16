@@ -3,3 +3,9 @@ entity.user.history:
   base_route: entity.user.canonical
   title: Count history
   weight: 30
+
+entity.user.logout:
+  route_name: user.logout
+  base_route: entity.user.canonical
+  title: Log out
+  weight: 40
