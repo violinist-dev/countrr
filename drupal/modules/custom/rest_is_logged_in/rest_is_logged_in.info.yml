@@ -1,5 +1,0 @@
-name: rest_is_logged_in
-type: module
-description: Rest is logged in resource
-core: 8.x
-package: Other
