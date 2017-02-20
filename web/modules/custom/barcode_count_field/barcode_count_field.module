@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Contains barcode_count_field.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Entity\EntityTypeInterface;
+
+
+/**
+ * Implements hook_help().
+ */
+function barcode_count_field_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the barcode_count_field module.
+    case 'help.page.barcode_count_field':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Barcode count field') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function barcode_count_field_theme() {
+  $theme = [];
+
+  return $theme;
+}
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function barcode_count_field_entity_base_field_info(EntityTypeInterface $entity_type) {
+  $fields = [];
+
+  if ($entity_type->id() == 'log') {
+    $fields['barcode_count'] = BaseFieldDefinition::create('integer')
+      ->setLabel('Number of barcodes in this batch')
+      ->setRevisionable(TRUE)
+      ->setDefaultValue(0);
+  }
+  return $fields;
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function barcode_count_field_log_presave(Drupal\log\Entity\Log $log) {
+  $count = $log->get('field_count_rows')->getValue();
+  // I put some count in your count, so you can count while you're counting.
+  $log->set('barcode_count', count($count));
+}

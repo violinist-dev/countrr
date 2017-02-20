@@ -1,0 +1,11 @@
+entity.user.history:
+  route_name: barcode_count_field.default_controller_history
+  base_route: entity.user.canonical
+  title: Count history
+  weight: 30
+
+entity.user.logout:
+  route_name: user.logout
+  base_route: entity.user.canonical
+  title: Log out
+  weight: 40
