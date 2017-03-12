@@ -1,0 +1,17 @@
+uuid: 80c57100-fcb0-479b-b06d-47188eb2623c
+langcode: en
+status: true
+dependencies:
+  module:
+    - hal
+    - user
+id: entity.user
+plugin_id: 'entity:user'
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - hal_json
+  authentication:
+    - cookie

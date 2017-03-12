@@ -1,3 +1,4 @@
+uuid: bf4c7692-dbc0-480c-be00-c2078333a98d
 langcode: en
 status: true
 dependencies:
@@ -713,7 +714,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: false
+          value: ''
           group: 1
           exposed: true
           expose:
@@ -794,6 +795,7 @@ display:
         weight: 0
         context: '0'
         menu_name: admin
+        enabled: true
       tab_options:
         type: normal
         title: Log
