@@ -1,0 +1,25 @@
+uuid: 0f5d8f61-0840-4b21-82a7-e8a089ec1af1
+langcode: en
+status: true
+dependencies: {  }
+id: 3dd6d5fe32
+name: 'Varnish purger'
+invalidationtype: tag
+hostname: localhost
+port: 80
+path: /
+request_method: BAN
+scheme: http
+verify: '1'
+headers:
+  -
+    field: X-Cache-Tags
+    value: '[invalidation:expression]'
+body: ''
+body_content_type: text/plain
+runtime_measurement: true
+timeout: !!float 1
+connect_timeout: !!float 1
+cooldown_time: !!float 0
+max_requests: 100
+http_errors: true
