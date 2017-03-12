@@ -6,8 +6,11 @@ dependencies:
     - log.type.count_batch
     - user.role.authenticated
   module:
+    - basic_auth
+    - hal
     - log
     - rest
+    - serialization
     - user
 id: user_batch_history
 label: 'User batch history'
@@ -485,6 +488,7 @@ display:
         weight: 0
         context: '0'
         menu_name: main
+        enabled: true
       fields:
         log_bulk_form:
           id: log_bulk_form

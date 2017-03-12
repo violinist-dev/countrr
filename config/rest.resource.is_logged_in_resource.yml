@@ -1,0 +1,18 @@
+uuid: 69f2f32b-ca28-4b60-9aa5-8545fd61fad5
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - hal
+    - rest_is_logged_in
+id: is_logged_in_resource
+plugin_id: is_logged_in_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - hal_json
+  authentication:
+    - basic_auth
