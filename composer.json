@@ -26,7 +26,9 @@
         "drupal/coffee": "1.x-dev",
         "drupal/devel": "1.x-dev",
         "drupal/restui": "^1.13",
-        "drupal/token": "1.x-dev"
+        "drupal/token": "1.x-dev",
+        "drupal/purge": "^3.0@beta",
+        "drupal/purge_purger_http": "^1.0@beta"
     },
     "require-dev": {
         "behat/mink": "~1.7",
