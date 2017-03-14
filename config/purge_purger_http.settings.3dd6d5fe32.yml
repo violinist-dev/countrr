@@ -13,7 +13,7 @@ scheme: http
 verify: '1'
 headers:
   -
-    field: X-Cache-Tags
+    field: X-Drupal-Cache-Tags
     value: '[invalidation:expression]'
 body: ''
 body_content_type: text/plain

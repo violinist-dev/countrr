@@ -5,19 +5,23 @@ channels:
       - 0
       - 2
       - 3
+      - 7
   -
     id: queue
     grants:
       - 0
       - 2
       - 3
+      - 7
   -
     id: diagnostics
     grants:
       - 3
+      - 7
   -
     id: purger_http_3dd6d5fe32
     grants:
       - 0
       - 2
       - 3
+      - 7
