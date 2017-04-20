@@ -22,12 +22,14 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
+    region: content
   field_count_rows:
     weight: 100
     label: above
     settings: {  }
     third_party_settings: {  }
     type: barcode_field_count_formatter
+    region: content
   timestamp:
     label: above
     type: timestamp
@@ -37,10 +39,12 @@ content:
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+    region: content
   user_id:
     label: hidden
     type: author
     weight: 99
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }
