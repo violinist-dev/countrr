@@ -1,0 +1,7 @@
+api_key: ''
+debug: true
+sender_name: Countrr
+sender: noreply@countrr.com
+format: restricted_html
+async: false
+skip_cron: false
