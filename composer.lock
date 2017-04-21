@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "65cc73f8ea2fed4974718e39130e58a4",
+    "content-hash": "942c6694c6526421caac8081118de6c5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1909,6 +1909,73 @@
             "homepage": "https://www.drupal.org/project/purge",
             "support": {
                 "source": "http://cgit.drupalcode.org/purge"
+            }
+        },
+        {
+            "name": "drupal/reroute_email",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/reroute_email",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/reroute_email-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": "be2ac355300f49b50d381981f4a80b112b554c0c"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1473465540"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "B-Prod",
+                    "homepage": "https://www.drupal.org/user/407852"
+                },
+                {
+                    "name": "DYdave",
+                    "homepage": "https://www.drupal.org/user/467284"
+                },
+                {
+                    "name": "Devaraj johnson",
+                    "homepage": "https://www.drupal.org/user/2698767"
+                },
+                {
+                    "name": "Rohin Knight",
+                    "homepage": "https://www.drupal.org/user/388531"
+                },
+                {
+                    "name": "kbahey",
+                    "homepage": "https://www.drupal.org/user/4063"
+                },
+                {
+                    "name": "rfay",
+                    "homepage": "https://www.drupal.org/user/30906"
+                },
+                {
+                    "name": "wafaa",
+                    "homepage": "https://www.drupal.org/user/50133"
+                }
+            ],
+            "description": "Reroutes emails send from the site to a predefined email. Useful for test sites.",
+            "homepage": "https://www.drupal.org/project/reroute_email",
+            "support": {
+                "source": "http://cgit.drupalcode.org/reroute_email"
             }
         },
         {
@@ -6861,7 +6928,8 @@
         "drupal/token": 20,
         "drupal/purge": 10,
         "drupal/purge_purger_http": 10,
-        "drupal/sparkpost": 20
+        "drupal/sparkpost": 20,
+        "drupal/reroute_email": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
