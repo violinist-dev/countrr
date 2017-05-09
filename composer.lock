@@ -1202,7 +1202,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/coffee",
-                "reference": "705db6793a8493d8c4a48e14780698de6f08e06a"
+                "reference": "8f6a4ee294342399df7ad9261225d2a0cd3ac43f"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1214,8 +1214,8 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2+3-dev",
-                    "datestamp": "1483637942"
+                    "version": "8.x-1.0-beta2+4-dev",
+                    "datestamp": "1494319685"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1256,7 +1256,7 @@
                 "issues": "https://drupal.org/project/issues/coffee",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-01-05 17:35:05"
+            "time": "2017-05-09 08:49:39"
         },
         {
             "name": "drupal/console",
