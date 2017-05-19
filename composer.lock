@@ -1702,7 +1702,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/devel",
-                "reference": "8ec61f91268a8a4daa7548240f58b33798cb5e86"
+                "reference": "3f2474586e2f729ad411e3967bda680cab50edfb"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1716,8 +1716,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc1+6-dev",
-                    "datestamp": "1492988343"
+                    "version": "8.x-1.0-rc2+10-dev",
+                    "datestamp": "1494859085"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1752,24 +1752,12 @@
                     "homepage": "https://www.drupal.org/node/3236/committers"
                 },
                 {
-                    "name": "moshe weitzman",
-                    "homepage": "https://www.drupal.org/user/23"
-                },
-                {
-                    "name": "pcambra",
-                    "homepage": "https://www.drupal.org/user/122101"
-                },
-                {
                     "name": "salvis",
                     "homepage": "https://www.drupal.org/user/82964"
                 },
                 {
                     "name": "willzyx",
                     "homepage": "https://www.drupal.org/user/1043862"
-                },
-                {
-                    "name": "yched",
-                    "homepage": "https://www.drupal.org/user/39567"
                 }
             ],
             "description": "Various blocks, pages, and functions for developers.",
@@ -1779,7 +1767,7 @@
                 "issues": "http://drupal.org/project/devel",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-04-23 23:18:56"
+            "time": "2017-05-19 18:32:27"
         },
         {
             "name": "drupal/purge",
