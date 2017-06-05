@@ -2005,7 +2005,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.13",
-                    "datestamp": "1478790974"
+                    "datestamp": "1493396643"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2048,7 +2048,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/sparkpost",
-                "reference": "cf13788eb62ba051f43fd5a8ff67b59aaccb7acb"
+                "reference": "405cc96d12b79133937b36fbff6caa20181783ef"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2061,8 +2061,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha1+1-dev",
-                    "datestamp": "1490197082"
+                    "version": "8.x-2.0-beta1+0-dev",
+                    "datestamp": "1496414043"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2088,7 +2088,7 @@
                 "source": "http://cgit.drupalcode.org/sparkpost",
                 "issues": "https://www.drupal.org/project/issues/sparkpost"
             },
-            "time": "2017-03-22 15:37:53"
+            "time": "2017-06-02 14:29:56"
         },
         {
             "name": "drupal/token",
