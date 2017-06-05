@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d36bc6b36ead4e0d5d7aa412cc2b778",
+    "content-hash": "ac3bd591e6217012dd4340265e8b171d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2044,11 +2044,17 @@
         },
         {
             "name": "drupal/sparkpost",
-            "version": "dev-2.x",
+            "version": "2.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/sparkpost",
-                "reference": "cf13788eb62ba051f43fd5a8ff67b59aaccb7acb"
+                "reference": "8.x-2.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sparkpost-8.x-2.0-beta1.zip",
+                "reference": "8.x-2.0-beta1",
+                "shasum": "b553bab26ed458c194ed1f3c42566184ce0750cb"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2061,8 +2067,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha1+1-dev",
-                    "datestamp": "1490197082"
+                    "version": "8.x-2.0-beta1",
+                    "datestamp": "1496414043"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2087,16 +2093,21 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/sparkpost",
                 "issues": "https://www.drupal.org/project/issues/sparkpost"
-            },
-            "time": "2017-03-22 15:37:53"
+            }
         },
         {
             "name": "drupal/token",
-            "version": "dev-1.x",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "a3b68ccb7c5657a8138c999731dca293ed7991a8"
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0.zip",
+                "reference": null,
+                "shasum": "d24c7f1ffddbd0fc56bc92bacae1c4ff769a4442"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2107,8 +2118,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2+5-dev",
-                    "datestamp": "1483288143"
+                    "version": "8.x-1.0",
+                    "datestamp": "1493466843"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2144,10 +2155,8 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "http://cgit.drupalcode.org/token",
-                "issues": "https://www.drupal.org/project/issues/token"
-            },
-            "time": "2017-01-01 16:26:13"
+                "source": "http://cgit.drupalcode.org/token"
+            }
         },
         {
             "name": "drush/drush",
@@ -6932,10 +6941,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/coffee": 20,
-        "drupal/token": 20,
         "drupal/purge": 10,
         "drupal/purge_purger_http": 10,
-        "drupal/sparkpost": 20,
         "drupal/reroute_email": 10
     },
     "prefer-stable": true,
