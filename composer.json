@@ -25,7 +25,7 @@
         "drupal/admin_toolbar": "~1.19.0",
         "drupal/coffee": "1.x-dev",
         "drupal/devel": "1.0-rc2",
-        "drupal/restui": "^1.13",
+        "drupal/restui": "~1.14.0",
         "drupal/token": "1.0",
         "drupal/purge": "^3.0@beta",
         "drupal/purge_purger_http": "^1.0@beta",
