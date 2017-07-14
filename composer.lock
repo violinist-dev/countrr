@@ -2045,7 +2045,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.13",
-                    "datestamp": "1478790974"
+                    "datestamp": "1493396643"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
