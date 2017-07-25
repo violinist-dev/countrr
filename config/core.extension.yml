@@ -36,7 +36,6 @@ module:
   reroute_email: 0
   rest: 0
   rest_is_logged_in: 0
-  restui: 0
   serialization: 0
   sparkpost: 0
   system: 0
