@@ -26,7 +26,7 @@
         "drupal/coffee": "1.x-dev",
         "drupal/devel": "1.0-rc2",
         "drupal/token": "1.0",
-        "drupal/purge": "^3.0@beta",
+        "drupal/purge": "^3.0.0-beta7",
         "drupal/purge_purger_http": "^1.0@beta",
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "^1.0@beta"
