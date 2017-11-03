@@ -28,8 +28,7 @@
         "drupal/purge": "^3.0@beta",
         "drupal/purge_purger_http": "^1.0@beta",
         "drupal/sparkpost": "2.0.0-rc1",
-        "drupal/reroute_email": "^1.0@beta",
-        "drupal/devel": "^1.2"
+        "drupal/reroute_email": "^1.0@beta"
     },
     "require-dev": {
         "drupal/drupal-extension": "^3.3"
