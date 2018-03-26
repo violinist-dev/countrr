@@ -22,7 +22,7 @@
         "drupal/core": "^8.4",
         "drush/drush": "^9@rc",
         "drupal/console": "~1.0.1",
-        "drupal/admin_toolbar": "~1.19.0",
+        "drupal/admin_toolbar": "~1.23.0",
         "drupal/coffee": "1.x-dev",
         "drupal/token": "1.1.0",
         "drupal/purge": "^3.0@beta",
